@@ -139,31 +139,33 @@ export default ({
           <NavRow>
             <LogoLink href="/">
               <img src={logo} alt="" />
-              Treact
+              UOFTMHA
             </LogoLink>
             <div tw="flex flex-wrap justify-center lg:justify-end items-center -mr-12">
               <NavLink target="_blank" href="https://owaiskhan.me/post/free-tailwindcss-react-ui-kit">
-                License & Usage
+                Home
               </NavLink>
               <NavLink target="_blank" href="https://owaiskhan.me">
-                Who Am I ?
+                Blog
               </NavLink>
               <NavLink target="_blank" href="https://twitter.com/owaiswiz">
-                Twitter
+                Resources
               </NavLink>
               <NavLink target="_blank" href="mailto:owaiswiz@gmail.com">
-                Hire Me!
+                Events and Intiatives
               </NavLink>
-              <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink target="_blank" href="https://gum.co/QaruQ">
-                Download Now
-              </PrimaryNavLink>
+              <NavLink target="_blank" href="mailto:owaiswiz@gmail.com">
+                Join us
+              </NavLink>
+              <NavLink target="_blank" href="mailto:owaiswiz@gmail.com">
+                Contact
+              </NavLink>
             </div>
           </NavRow>
           <HeroRow>
             <UpdateNotice>
               <UpdateNoticeIcon />
-              Last updated on 10th September, 2022 - Added support for React v18 and TailwindCSS v3!
+              Website under construction
             </UpdateNotice>
             <TextColumn>
               <Heading as="h1">{heading}</Heading>
@@ -190,10 +192,12 @@ export default ({
             </ImageColumn>
           </HeroRow>
           <SectionContainer id="landingPageDemos">
-            <SectionHeading>Landing Pages</SectionHeading>
+            <SectionHeading>About</SectionHeading>
             <SectionDescription>
-              We have {noOfLandingPages} premade landing pages. Click on the "View Live Demo" button to see them in
-              action. Customizing or Creating your own custom landing page is really simple by using our UI components.
+              We have {noOfLandingPages} The University of Toronto Mental Health Association (UOFTMHA) was established in 2016 and works to link students with mental health resources. 
+We're a student-run club that aims to break the stigma surrounding mental health and empower students through their mental health journeys while also practicing diversity, equity & inclusion. We strive to educate and promote healthy coping mechanisms among students struggling with their mental health and aim to make mental health resources a lot more accessible to students. We aim to do this by hosting events, seminars, workshops, fundraisers, and other initiatives throughout the year to raise awareness and educate UofT students as well as members of the community on various mental health themes. In our approach, we aim to increase representations of various mental health topics and amplify voices of underrepresented groups within the university space online and in-person, while constantly obtaining ongoing feedback from club members and the UofT community to better cater our initiatives towards their needs.
+
+​We try and look at mental health from a different perspective, showcasing more than just the clinical aspect but also healthy mind, healthy body lifestyle and resources. 
             </SectionDescription>
             <PreviewCards>
               {Object.entries(landingPages).map(([pageName, page], index) => (
