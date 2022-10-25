@@ -192,7 +192,7 @@ export default ({
             </ImageColumn>
           </HeroRow>
           <SectionContainer id="landingPageDemos">
-            <SectionHeading>About</SectionHeading>
+            <SectionHeading>A</SectionHeading>
             <SectionDescription>
               We have {noOfLandingPages} The University of Toronto Mental Health Association (UOFTMHA) was established in 2016 and works to link students with mental health resources. 
 We're a student-run club that aims to break the stigma surrounding mental health and empower students through their mental health journeys while also practicing diversity, equity & inclusion. We strive to educate and promote healthy coping mechanisms among students struggling with their mental health and aim to make mental health resources a lot more accessible to students. We aim to do this by hosting events, seminars, workshops, fundraisers, and other initiatives throughout the year to raise awareness and educate UofT students as well as members of the community on various mental health themes. In our approach, we aim to increase representations of various mental health topics and amplify voices of underrepresented groups within the university space online and in-person, while constantly obtaining ongoing feedback from club members and the UofT community to better cater our initiatives towards their needs.
