@@ -62,10 +62,11 @@ export default () => {
       <NavLink href="#">
         Join Us
       </NavLink>
-    </NavLinks>,
+    
       <NavLink href="#">
       Contact
     </NavLink>
+    </NavLinks>,
   ];
 
   return (
