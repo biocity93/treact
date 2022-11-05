@@ -16,11 +16,10 @@ const StyledHeader = styled(Header)`
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: url("https://unsplash.com/photos/wWZzXlDpMog");
+  // background-image: url("https://unsplash.com/photos/S-2Ukb_VqpA");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
-
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
@@ -62,7 +61,6 @@ export default () => {
       <NavLink href="#">
         Join Us
       </NavLink>
-    
       <NavLink href="#">
       Contact
     </NavLink>
@@ -81,7 +79,7 @@ export default () => {
             <Heading>
               <span>UOFTMHA</span>
               <br />
-              <SlantedBackground>The University of Toronto Mental Health Association</SlantedBackground>
+             <SlantedBackground>The University of Toronto Mental Health Association</SlantedBackground>
             </Heading>
             <PrimaryAction>Join the intiative</PrimaryAction>
           </LeftColumn>
