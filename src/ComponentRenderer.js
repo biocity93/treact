@@ -6,7 +6,6 @@ import uoftmhamain from "TestPage/uoftmhamain.js";
 
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
-import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
 import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
@@ -83,10 +82,6 @@ export const components = {
       component: SignupPage,
       url: `/components/innerPages/SignupPage`,
       scrollAnimationDisabled: true,
-    },
-    PricingPage: {
-      component: PricingPage,
-      url: `/components/innerPages/PricingPage`,
     },
     AboutUsPage: {
       component: AboutUsPage,
