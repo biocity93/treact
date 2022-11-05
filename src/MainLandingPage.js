@@ -18,7 +18,6 @@ import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg"
 import { ReactComponent as HandleIcon } from "images/handle-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
 
-import heroScreenshotImageSrc from "images/demo/MainLandingPageHero.png";
 import logo from "images/logo.svg";
 import useInView from "helpers/useInView";
 
@@ -26,9 +25,6 @@ import useInView from "helpers/useInView";
 const Row = tw.div`flex`;
 const NavRow = tw(Row)`flex flex-col lg:flex-row items-center justify-between`;
 const NavLink = tw.a`mt-4 lg:mt-0 transition duration-300 font-medium pb-1 border-b-2 mr-12 text-gray-700 border-gray-400 hocus:border-gray-700`;
-const PrimaryNavLink = tw(
-  NavLink
-)`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
 const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center pt-8 lg:pt-12 pb-16 max-w-screen-2xl mx-auto flex-wrap`;
 
 const Column = tw.div`flex-1`;
@@ -186,9 +182,6 @@ export default ({
               </Actions>
             </TextColumn>
             <ImageColumn>
-              <ImageContainer>
-                <Image src={heroScreenshotImageSrc} />
-              </ImageContainer>
             </ImageColumn>
           </HeroRow>
           <SectionContainer id="landingPageDemos">
