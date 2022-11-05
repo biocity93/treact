@@ -1,6 +1,5 @@
 import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Hero from "components/hero/FullWidthWithImage.js";
 import Features from "components/features/ThreeColSimple.js";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 import SliderCard from "components/cards/ThreeColSlider.js";
@@ -10,7 +9,7 @@ import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePic
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import SubscribeNewsLetterForm from "components/forms/SimpleSubscribeNewsletter.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
-
+import Hero from "components/hero/BackgroundAsImage.js";
 export default () => (
   <AnimationRevealPage>
     <Hero />
