@@ -2,13 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import AnimationRevealPage from "helpers/AnimationRevealPage.js"
 
-import EventLandingPage from "demos/EventLandingPage.js";
-import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
-import AgencyLandingPage from "demos/AgencyLandingPage.js";
-import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
-import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
-import ServiceLandingPage from "demos/ServiceLandingPage.js";
-import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
+import uoftmhamain from "TestPage/uoftmhamain.js";
 
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
@@ -20,10 +14,6 @@ import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import BackgroundAsImageHero from "components/hero/BackgroundAsImage.js";
-
-import TwoPlansWithDurationSwitcherPricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
-import ThreePlansWithHalfPrimaryBackgroundPricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
-import ThreePlansPricing from "components/pricing/ThreePlans.js";
 
 import ThreeColWithSideImageFeatures from "components/features/ThreeColWithSideImage.js";
 import TwoColWithButtonFeatures from "components/features/TwoColWithButton.js";
@@ -63,7 +53,6 @@ import TwoColumnPrimaryBackgroundFAQS from "components/faqs/TwoColumnPrimaryBack
 import SimpleContactUsForm from "components/forms/SimpleContactUs.js";
 import SimpleSubscribeNewsletterForm from "components/forms/SimpleSubscribeNewsletter.js";
 import TwoColContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
-import TwoColContactUsFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 
 import GetStartedCTA from "components/cta/GetStarted.js";
 import GetStartedLightCTA from "components/cta/GetStartedLight.js";
@@ -75,36 +64,12 @@ import FiveColumnWithBackgroundFooter from "components/footers/FiveColumnWithBac
 import FiveColumnDarkFooter from "components/footers/FiveColumnDark.js";
 import MiniCenteredFooter from "components/footers/MiniCenteredFooter.js";
 
-
+//May have to change this in future
 export const components = {
   landingPages: {
-    RestaurantLandingPage: {
-      component: RestaurantLandingPage,
-      url: "/components/landingPages/RestaurantLandingPage",
-    },
-    HotelTravelLandingPage: {
-      component: HotelTravelLandingPage,
-      url: "/components/landingPages/HotelTravelLandingPage",
-    },
-    SaaSProductLandingPage: {
-      component: SaaSProductLandingPage,
-      url: "/components/landingPages/SaaSProductLandingPage",
-    },
-    ServiceLandingPage: {
-      component: ServiceLandingPage,
-      url: "/components/landingPages/ServiceLandingPage",
-    },
-    EventLandingPage: {
-      component: EventLandingPage,
-      url: "/components/landingPages/EventLandingPage",
-    },
-    AgencyLandingPage: {
-      component: AgencyLandingPage,
-      url: "/components/landingPages/AgencyLandingPage",
-    },
-    HostingCloudLandingPage: {
-      component: HostingCloudLandingPage,
-      url: "/components/landingPages/HostingCloudLandingPage",
+    uoftmhamain: {
+      component: uoftmhamain,
+      url: "/components/landingPages/uoftmhamain",
     },
   },
 
@@ -153,26 +118,6 @@ export const components = {
           name: "With Background Image",
           component: BackgroundAsImageHero,
           url: "/components/blocks/Hero/BackgroundAsImage",
-        },
-      }
-    },
-    Pricing: {
-      type: "Pricing Section",
-      elements: {
-        TwoPlansWithDurationSwitcher: {
-          name: "Two Plans With Duration Switcher",
-          component: TwoPlansWithDurationSwitcherPricing,
-          url: "/components/blocks/Pricing/TwoPlansWithDurationSwitcher",
-        },
-        ThreePlansWithHalfPrimaryBackground: {
-          name: "Three Plans With Primary Background at Top",
-          component: ThreePlansWithHalfPrimaryBackgroundPricing,
-          url: "/components/blocks/Pricing/ThreePlansWithHalfPrimaryBackground",
-        },
-        ThreePlans: {
-          name: "Simple Three Plans",
-          component: ThreePlansPricing,
-          url: "/components/blocks/Pricing/ThreePlans",
         },
       }
     },
@@ -376,7 +321,6 @@ export const components = {
         },
         TwoColContactUsFull: {
           name: "Two Column Contact Us - Full Form",
-          component: TwoColContactUsFullForm,
           url: "/components/blocks/Form/TwoColContactUsFull",
         },
       }
