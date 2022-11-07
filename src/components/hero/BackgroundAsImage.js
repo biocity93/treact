@@ -21,12 +21,12 @@ const Container = styled.div`
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-75`;
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
-const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
+const TwoColumn = tw.div`pt-20 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
-const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
+const RightColumn = tw.div`w-full  sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-none`}
+  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-5xl font-black text-gray-100 leading-none`}
   span {
     ${tw`inline-block mt-2`}
   }
@@ -64,16 +64,14 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            
-           <Notification>Website is under construction.</Notification>
+           <Notification>Here we can add quick news or updates.</Notification>
             <Heading>
               <span>The University of Toronto Mental Health Association</span>
               <br />
             </Heading>
-            <PrimaryAction>Join the intiative</PrimaryAction>
+            <center>
+            <PrimaryAction>More Information</PrimaryAction></center>
           </LeftColumn>
-          <RightColumn>
-          </RightColumn>
         </TwoColumn>
       </HeroContainer>
     </Container>

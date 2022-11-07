@@ -1,9 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import AnimationRevealPage from "helpers/AnimationRevealPage.js"
-
-import uoftmhamain from "TestPage/uoftmhamain.js";
-
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
 import AboutUsPage from "pages/AboutUs.js";
@@ -14,18 +11,18 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import BackgroundAsImageHero from "components/hero/BackgroundAsImage.js";
 
-import ThreeColWithSideImageFeatures from "components/features/ThreeColWithSideImage.js";
-import TwoColWithButtonFeatures from "components/features/TwoColWithButton.js";
-import ThreeColSimpleFeatures from "components/features/ThreeColSimple.js";
-import ThreeColWithSideImageWithPrimaryBackgroundFeatures from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
-import TwoColVerticalWithButtonFeatures from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import TwoColHorizontalWithButtonFeatures from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
-import WithStepsAndImageFeatures from "components/features/TwoColWithSteps.js";
-import ThreeColumnDashedBorderFeatures from "components/features/DashedBorderSixFeatures";
-import ThreeColCenteredStatsWithPrimaryBackgroundFeatures from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
-import WithStatsAndImageFeatures from "components/features/TwoColSingleFeatureWithStats.js";
-import WithStatsAndImage2Features from "components/features/TwoColSingleFeatureWithStats2.js";
-import VerticalWithAlternateImageAndTextFeatures from "components/features/VerticalWithAlternateImageAndText.js";
+import ThreeColWithSideImageFeatures from "components/coloumns/ThreeColWithSideImage.js";
+import TwoColWithButtonFeatures from "components/coloumns/TwoColWithButton.js";
+import ThreeColSimpleFeatures from "components/coloumns/ThreeColSimple.js";
+import ThreeColWithSideImageWithPrimaryBackgroundFeatures from "components/coloumns/ThreeColWithSideImageWithPrimaryBackground.js";
+import TwoColVerticalWithButtonFeatures from "components/coloumns/TwoColWithTwoFeaturesAndButtons.js";
+import TwoColHorizontalWithButtonFeatures from "components/coloumns/TwoColWithTwoHorizontalFeaturesAndButton.js";
+import WithStepsAndImageFeatures from "components/coloumns/TwoColWithSteps.js";
+import ThreeColumnDashedBorderFeatures from "components/coloumns/DashedBorderSixFeatures";
+import ThreeColCenteredStatsWithPrimaryBackgroundFeatures from "components/coloumns/ThreeColCenteredStatsPrimaryBackground.js";
+import WithStatsAndImageFeatures from "components/coloumns/TwoColSingleFeatureWithStats.js";
+import WithStatsAndImage2Features from "components/coloumns/TwoColSingleFeatureWithStats2.js";
+import VerticalWithAlternateImageAndTextFeatures from "components/coloumns/VerticalWithAlternateImageAndText.js";
 
 import SliderCards from "components/cards/ThreeColSlider.js";
 import TrendingCards from "components/cards/TwoTrendingPreviewCardsWithImage.js";
@@ -34,10 +31,10 @@ import TabGridCards from "components/cards/TabCardGrid.js";
 import ProfileThreeColGridCards from "components/cards/ProfileThreeColGrid.js"
 import ThreeColContactDetailsCards from "components/cards/ThreeColContactDetails.js"
 
-import ThreeColSimpleWithImageBlog from "components/blogs/ThreeColSimpleWithImage.js";
-import ThreeColSimpleWithImageAndDashedBorderBlog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
-import PopularAndRecentPostsBlog from "components/blogs/PopularAndRecentBlogPosts.js";
-import GridWithFeaturedPostBlog from "components/blogs/GridWithFeaturedPost.js";
+import ThreeColSimpleWithImageBlog from "components/blog/ThreeColSimpleWithImage.js";
+import ThreeColSimpleWithImageAndDashedBorderBlog from "components/blog/ThreeColSimpleWithImageAndDashedBorder.js";
+import PopularAndRecentPostsBlog from "components/blog/PopularAndRecentBlogPosts.js";
+import GridWithFeaturedPostBlog from "components/blog/GridWithFeaturedPost.js";
 
 import TwoColumnWithImageTestimonial from "components/testimonials/TwoColumnWithImage.js";
 import TwoColumnWithImageAndProfilePictureReviewTestimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
@@ -57,21 +54,10 @@ import GetStartedCTA from "components/cta/GetStarted.js";
 import GetStartedLightCTA from "components/cta/GetStartedLight.js";
 import DownloadAppCTA from "components/cta/DownloadApp.js";
 
-import SimpleFiveColumnFooter from "components/footers/SimpleFiveColumn.js";
-import FiveColumnWithInputFormFooter from "components/footers/FiveColumnWithInputForm.js";
-import FiveColumnWithBackgroundFooter from "components/footers/FiveColumnWithBackground.js";
 import FiveColumnDarkFooter from "components/footers/FiveColumnDark.js";
-import MiniCenteredFooter from "components/footers/MiniCenteredFooter.js";
 
 //May have to change this in future
 export const components = {
-  landingPages: {
-    uoftmhamain: {
-      component: uoftmhamain,
-      url: "/components/landingPages/uoftmhamain",
-    },
-  },
-
   innerPages: {
     LoginPage: {
       component: LoginPage,
@@ -345,30 +331,10 @@ export const components = {
     Footer: {
       type: "Footers Section",
       elements: {
-        SimpleFiveColumn: {
-          name: "Simple Five Column",
-          component: SimpleFiveColumnFooter,
-          url: "/components/blocks/Footer/SimpleFiveColumn",
-        },
-        FiveColumnWithInputForm: {
-          name: "Five Column With Input Form",
-          component: FiveColumnWithInputFormFooter,
-          url: "/components/blocks/Footer/FiveColumnWithInputForm",
-        },
-        FiveColumnWithBackground: {
-          name: "Five Column With background",
-          component: FiveColumnWithBackgroundFooter,
-          url: "/components/blocks/Footer/FiveColumnWithBackground",
-        },
         FiveColumnDark: {
           name: "Five Column Dark",
           component: FiveColumnDarkFooter,
           url: "/components/blocks/Footer/FiveColumnDark",
-        },
-        MiniCentered: {
-          name: "Mini Centered Dark",
-          component: MiniCenteredFooter,
-          url: "/components/blocks/Footer/MiniCentered",
         },
       }
     }

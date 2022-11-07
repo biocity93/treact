@@ -71,13 +71,13 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="src\pages\AboutUs.js">Resources</NavLink>
-      <NavLink href="/#">Blog</NavLink>
+      <NavLink href="">Resources</NavLink>
+      <NavLink href="">Blog</NavLink>
       <NavLink href="/#">Events and initiatives</NavLink>
       <NavLink href="/#">Join Us</NavLink>
       <NavLink href="/#">Team</NavLink>
       <NavLink href="/#">Contact</NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Join the intiative</PrimaryLink>
+      {/* <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Join the intiative</PrimaryLink> */}
     </NavLinks>
   ];
 
@@ -86,7 +86,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      UOFTMHA
+      uoftmha
     </LogoLink>
   );
 

@@ -9,7 +9,7 @@ const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ThreeColumn = tw.div`flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap`;
 const Column = tw.div`mt-24 lg:w-1/3`;
-
+const Button = tw.button`w-full sm:w-32 mt-0 py-3 bg-primary-600 text-gray-100 rounded-full font-bold tracking-wide shadow-lg uppercase text-sm transition duration-300 transform focus:outline-none focus:shadow-outline hover:bg-gray-300 hover:text-primary-700 hocus:-translate-y-px hocus:shadow-xl`;
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
 
@@ -33,32 +33,32 @@ export default () => {
   const blogPosts = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      category: "Event Tips",
-      title: "Finding Amazing Events Near You - Fast, Cheap & Free",
-      url: "https://timerse.com"
+        "https://images.unsplash.com/photo-1558396022-6db022163507?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=762&q=80",
+      category: "News",
+      title: "Januaray news about association",
+      url: ""
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1543365067-fa127bcb2303?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      category: "Reviews",
-      title: "The Top Rated Musical Concerts Worldwide in 2019",
-      url: "https://reddit.com"
+        "https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+      category: "Resources",
+      title: "Mental Health Resources",
+      url: ""
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      category: "Discover",
-      title: "This female band is making buzz all over the world",
-      url: "https://timerse.com"
+        "https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      category: "Event",
+      title: "Upcoming event",
+      url: "m"
     }
   ];
   return (
     <Container>
       <Content>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Blog Posts</HeadingTitle>
-          <HeadingDescription>Some amazing blog posts that are written by even more amazing people.</HeadingDescription>
+          <HeadingTitle>News</HeadingTitle>
+          <HeadingDescription>Most recent news about University of Toronto Mental Health association.</HeadingDescription>
         </HeadingInfoContainer>
         <ThreeColumn>
           {blogPosts.map((post, index) => (
@@ -70,9 +70,11 @@ export default () => {
                 <Link href={post.url}>Read Post</Link>
               </Card>
             </Column>
+            
           ))}
         </ThreeColumn>
       </Content>
+      <center><Button>Read More</Button></center>
       <DecoratorBlob1 />
       <DecoratorBlob2 />
     </Container>

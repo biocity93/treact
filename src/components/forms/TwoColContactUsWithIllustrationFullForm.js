@@ -36,7 +36,7 @@ const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 export default ({
   subheading = "Contact Us",
   heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "The University of Toronto Mental Health Association is always open to welcoming all University of Toronto students to help us create a better community! Feel free to fill out your information below to contact us!",
   submitButtonText = "Send",
   formAction = "#",
   formMethod = "get",
