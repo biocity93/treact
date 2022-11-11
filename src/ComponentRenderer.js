@@ -1,8 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import AnimationRevealPage from "helpers/AnimationRevealPage.js"
-import LoginPage from "pages/Login.js";
-import SignupPage from "pages/Signup.js";
 import AboutUsPage from "pages/AboutUs.js";
 import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
@@ -59,16 +57,6 @@ import FiveColumnDarkFooter from "components/footers/FiveColumnDark.js";
 //May have to change this in future
 export const components = {
   innerPages: {
-    LoginPage: {
-      component: LoginPage,
-      scrollAnimationDisabled: true,
-      url: "/components/innerPages/LoginPage",
-    },
-    SignupPage: {
-      component: SignupPage,
-      url: `/components/innerPages/SignupPage`,
-      scrollAnimationDisabled: true,
-    },
     AboutUsPage: {
       component: AboutUsPage,
       url: `/components/innerPages/AboutUsPage`,

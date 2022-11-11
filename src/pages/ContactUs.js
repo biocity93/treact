@@ -25,7 +25,7 @@ export default () => {
                 <Address>
                   <AddressLine>
             Room 500L, 40 Willcocks Street</AddressLine>
-                  <AddressLine>Toronto, ON M5S1C6</AddressLine>
+                  <AddressLine>Toronto, ON M5S 1C6</AddressLine>
                 </Address>
                 <Email>uoftmha@gmail.com</Email>
               </>

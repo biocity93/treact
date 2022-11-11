@@ -57,7 +57,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingInfoContainer>
-          <HeadingTitle>News</HeadingTitle>
+          <HeadingTitle>News & Updates</HeadingTitle>
           <HeadingDescription>Most recent news about University of Toronto Mental Health association.</HeadingDescription>
         </HeadingInfoContainer>
         <ThreeColumn>

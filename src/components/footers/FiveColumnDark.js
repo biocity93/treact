@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
+import { ReactComponent as FacebookIcon} from "images/facebook-icon.svg";
 
 const Container = tw.div`relative bg-primary-800 text-gray-100 -mx-8 -mb-8 px-8`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8 text-center `
@@ -46,10 +47,11 @@ export default () => {
               <LogoText>University of Toronto Mental Health Association</LogoText>
             </LogoContainer>
             <CompanyAddress>
-            Room 500L, 40 Willcocks Street, Toronto, ON M5S1C6
+            Room 500L, 40 Willcocks Street, Toronto, ON M5S 1C6
             </CompanyAddress>
             <SocialLinksContainer>
               <SocialLink href="https://www.facebook.com/groups/923127621744217">
+              <FacebookIcon />
               </SocialLink>
               <SocialLink href="https://twitter.com/uoftmha">
               <TwitterIcon />

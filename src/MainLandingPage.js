@@ -5,8 +5,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import MainFeature from "components/coloumns/TwoColWithButton.js";
 import Footer from "components/footers/FiveColumnDark.js";
 import Hero from "components/hero/BackgroundAsImage.js";
-import TeamCard from "components/cards/ProfileThreeColGrid.js"
+// import TeamCard from "components/cards/ProfileThreeColGrid.js"
 import Blog from "components/blog/ThreeColSimpleWithImage.js"
+import Sponsors from "components/coloumns/ThreeColSimple.js"
 import ContactForm from "components/forms/SimpleContactUs"
 
 export default () => {
@@ -53,7 +54,8 @@ export default () => {
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
       <Blog />
-      <TeamCard />
+      <Sponsors />
+      {/* <TeamCard /> */}
       <ContactForm />
       <Footer />
     </AnimationRevealPage>
