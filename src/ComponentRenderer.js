@@ -6,12 +6,14 @@ import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import EventsAndIntiatives from "pages/EventsAndIntiatives.js";
+import Resources from "pages/Resources";
 
 import BackgroundAsImageHero from "components/hero/BackgroundAsImage.js";
 
 import ThreeColWithSideImageFeatures from "components/coloumns/ThreeColWithSideImage.js";
 import TwoColWithButtonFeatures from "components/coloumns/TwoColWithButton.js";
-import ThreeColSimpleFeatures from "components/coloumns/ThreeColSimple.js";
+import ThreeColSimpleFeatures from "components/coloumns/Sponsors.js";
 import ThreeColWithSideImageWithPrimaryBackgroundFeatures from "components/coloumns/ThreeColWithSideImageWithPrimaryBackground.js";
 import TwoColVerticalWithButtonFeatures from "components/coloumns/TwoColWithTwoFeaturesAndButtons.js";
 import TwoColHorizontalWithButtonFeatures from "components/coloumns/TwoColWithTwoHorizontalFeaturesAndButton.js";
@@ -76,7 +78,15 @@ export const components = {
     PrivacyPolicyPage: {
       component: PrivacyPolicyPage,
       url: `/components/innerPages/PrivacyPolicyPage`,
-    }
+    },
+    EventsAndIntiatives: {
+      component: EventsAndIntiatives,
+      url: "/components/innerPages/EventsAndIntiatives",
+    },
+    Resources: {
+      component: Resources,
+      url: "/components/innerPages/Resources",
+    },
   },
 
   blocks: {

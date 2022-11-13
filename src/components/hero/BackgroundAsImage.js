@@ -2,7 +2,6 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import BlogIndexPage from "pages/BlogIndex.js";
 
 
 
@@ -22,7 +21,7 @@ const Container = styled.div`
   background-image: url("https://nowtoronto.com/wp-content/uploads/2020/07/University-of-Toronto-ferenz-980x618.jpg");
 `;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-75`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-blue-800 opacity-75`;
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const TwoColumn = tw.div`pt-20 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
@@ -35,25 +34,22 @@ const Heading = styled.h1`
 `;
 const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
 
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:shadow-outline`;
-
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
+      <NavLink href="/components/innerPages/Resources">
         Resources
       </NavLink>
-      <NavLink href="pages/BlogIndex.js">
-        Blog
+      <NavLink href="/components/innerPages/BlogIndexPage">
+        News and Updates
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/components/innerPages/EventsAndIntiatives">
         Events and Intiatives
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/components/innerPages/AboutUsPage">
         Join Us
       </NavLink>
-      <NavLink href="/#">Team</NavLink>
-      <NavLink href="#">
+      <NavLink href="/components/innerPages/ContactUsPage">
       Contact
     </NavLink>
     </NavLinks>,
@@ -66,13 +62,12 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-           <Notification>Here we can add quick news or updates.</Notification>
+           <Notification>"Your mental health is a priority. Your happiness is essential. Your self-care is a necessity.”
+​- Dennis Gates</Notification>
             <Heading>
               <span>The University of Toronto Mental Health Association</span>
               <br />
             </Heading>
-            <center>
-            <PrimaryAction>Join the Intiatives</PrimaryAction></center>
           </LeftColumn>
         </TwoColumn>
       </HeroContainer>

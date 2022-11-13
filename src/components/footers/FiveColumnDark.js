@@ -5,8 +5,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as FacebookIcon} from "images/facebook-icon.svg";
+import { ReactComponent as InstagramIcon} from "images/instagram-icon.svg";
 
-const Container = tw.div`relative bg-primary-800 text-gray-100 -mx-8 -mb-8 px-8`;
+const Container = tw.div`relative bg-blue-800 opacity-75 text-gray-100 -mx-8 -mb-8 px-8`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8 text-center `
 const FiveColumns = tw.div`flex flex-wrap justify-between`;
 const Column = tw.div`w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left`;
@@ -57,6 +58,7 @@ export default () => {
               <TwitterIcon />
               </SocialLink>
               <SocialLink href="https://www.instagram.com/uoftmha">
+                <InstagramIcon />
               </SocialLink>
               <SocialLink href="https://www.linkedin.com/company/university-of-toronto-mental-health-assoociation/">
               <LinkedinIcon />
@@ -70,16 +72,16 @@ export default () => {
                 <Link href="#">Resources</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Events & initiatives</Link>
+                <Link href="/components/innerPages/EventsAndIntiatives">Events & initiatives</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Team</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="/components/innerPages/BlogIndexPage">Blog</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Join Us</Link>
+                <Link href="/components/innerPages/AboutUsPage">Join Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>

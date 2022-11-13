@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import EmailIllustrationSrc from "images/email-illustration.svg";
+import EmailIllustrationSrc from "images/mental-health.png";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -35,7 +35,7 @@ const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 
 export default ({
   subheading = "Contact Us",
-  heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
+  heading = <>Feel free to <span tw="text-primary-100">get in touch</span><wbr/> with us.</>,
   description = "The University of Toronto Mental Health Association is always open to welcoming all University of Toronto students to help us create a better community! Feel free to fill out your information below to contact us!",
   submitButtonText = "Send",
   formAction = "#",
