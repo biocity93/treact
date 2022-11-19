@@ -24,7 +24,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-        <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<MainLandingPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
