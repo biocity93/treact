@@ -13,7 +13,7 @@ const StyledHeader = styled(Header)`
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
   ${NavToggle}.closed {
-    ${tw`text-gray-100 hover:text-primary-500`}
+    ${tw`text-gray-100 hover:text-blue-500`}
   }
 `;
 const Container = styled.div`
@@ -37,19 +37,19 @@ const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/components/innerPages/Resources">
+      <NavLink href="/resources">
         Resources
       </NavLink>
-      <NavLink href="/components/innerPages/BlogIndexPage">
+      <NavLink href="/newsandupdates">
         News and Updates
       </NavLink>
-      <NavLink href="/components/innerPages/EventsAndIntiatives">
+      <NavLink href="/eventsandinitiatives">
         Events and Intiatives
       </NavLink>
-      <NavLink href="/components/innerPages/AboutUsPage">
+      <NavLink href="/joinus">
         Join Us
       </NavLink>
-      <NavLink href="/components/innerPages/ContactUsPage">
+      <NavLink href="/contact">
       Contact
     </NavLink>
     </NavLinks>,

@@ -22,7 +22,7 @@ export const NavLinks = tw.div`inline-block`;
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+  pb-1 border-b-2 border-transparent hover:border-blue-500 hocus:text-blue-500
 `;
 
 export const PrimaryLink = tw(NavLink)`
@@ -42,7 +42,7 @@ export const LogoLink = styled(NavLink)`
 
 export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-between`;
 export const NavToggle = tw.button`
-  lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
+  lg:hidden z-20 focus:outline-none hocus:text-blue-500 transition duration-300
 `;
 export const MobileNavLinks = motion(styled.div`
   ${tw`lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white`}
@@ -71,11 +71,11 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/components/innerPages/Resources">Resources</NavLink>
-      <NavLink href="/components/innerPages/BlogIndexPage">News and Updates</NavLink>
-      <NavLink href="/components/innerPages/EventsAndIntiatives">Events and initiatives</NavLink>
-      <NavLink href="/components/innerPages/AboutUsPage">Join Us</NavLink>
-      <NavLink href="/components/innerPages/ContactUsPage">Contact</NavLink>
+      <NavLink href="/resources">Resources</NavLink>
+      <NavLink href="/newsandupdates">News and Updates</NavLink>
+      <NavLink href="/eventsandinitiatives">Events and initiatives</NavLink>
+      <NavLink href="/joinus">Join Us</NavLink>
+      <NavLink href="/contact">Contact</NavLink>
     </NavLinks>
   ];
 

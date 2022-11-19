@@ -5,7 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import MainFeature from "components/coloumns/TwoColWithButton.js";
 import Footer from "components/footers/FiveColumnDark.js";
 import Hero from "components/hero/BackgroundAsImage.js";
-import Blog from "components/blog/ThreeColSimpleWithImage.js"
+import Blog from "components/cards/ThreeColSlider.js"
 import Sponsors from "components/coloumns/Sponsors.js"
 import ContactForm from "components/forms/SimpleContactUs"
 
