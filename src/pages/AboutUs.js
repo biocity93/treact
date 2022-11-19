@@ -4,11 +4,12 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnDark";
+import Footer from "components/footers/FooterMain";
 import MainFeature1 from "components/coloumns/TwoColWithButton.js";
-import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
+import TeamCardGridHead from "components/cards/ProfileThreeColGridHead.js";
+import TeamCardGridBody from "components/cards/ProfileThreeColGridBody.js";
+import Logo from "images/MHA-02.png";
 
-const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
   return (
     <AnimationRevealPage>
@@ -22,10 +23,18 @@ export default () => {
         descriptionFour="​If you have any questions regarding the application process or timeline for the upcoming semester, questions about a role, or want to learn about opportunities to get involved with our club, feel free to DM us on our Instagram @uoftmha or email us at uoftmha@gmail.com. Thank you so much!"
         buttonRounded={false}
         primaryButtonText="Become General Member"
-        imageSrc="https://uoftmha.weebly.com/uploads/2/5/5/2/25525917/editor/screen-shot-2020-11-09-at-2-56-14-pm.png?1642071544"
+        imageSrc={Logo}
       />
-      <TeamCardGrid 
+      <TeamCardGridHead
+      heading= "2022-2023"
+      description="Executive Team"
       />
+      <TeamCardGridBody/>
+      <TeamCardGridBody/>
+      <TeamCardGridBody/>
+      <TeamCardGridBody/>
+      <TeamCardGridBody/>
+      <TeamCardGridBody/>
       <Footer />
     </AnimationRevealPage>
   );

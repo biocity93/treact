@@ -41,13 +41,64 @@ const CardLinks = styled.div`
 
 export default ({
   subheading = "" ,
-  heading = "Our very own resource handbooks!",
-  description = "Our 2021-2022 Diversity, Equity & Inclusion Team has launched a series of Resource Handbooks that can be downloaded and kept on hand whenever needed! We recognize that navigating resources and finding the best fit for you can be a huge challenge, along with reaching out for help, so after some comprehensive research, we've included different types of mental health and educational resources and services across 9 handbooks and categorized them according to various barriers individuals seem to face when attempting to access mental health services - affordability, region, accessibility, and so much more!",
-  cards={}
+  heading = "",
+  description = "",
+  cards = [
+    {
+      imageSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
+      position: "Position",
+      name: "Name",
+      links: [
+        {
+          url: "",
+          icon: InstagramIcon,
+        },
+        {
+          url: "",
+          icon: LinkedinIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
+      position: "Position",
+      name: "Name",
+      links: [
+        {
+          url: "https://twitter.com",
+          icon: InstagramIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
+      position: "Position",
+      name: "Name",
+      links: [
+        {
+          url: "https://twitter.com",
+          icon: InstagramIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+      ],
+    },
+  ]
 }) => {
   return (
     <Container>
       <ContentWithPaddingXl>
+        <HeadingContainer>
+          {subheading && <Subheading>{subheading}</Subheading>}
+          {heading && <Heading>{heading}</Heading> }
+          {description && <Description>{description}</Description> }
+        </HeadingContainer>
         <Cards>
           {cards.map((card, index) => (
             <Card key={index}>

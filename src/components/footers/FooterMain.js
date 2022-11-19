@@ -21,11 +21,11 @@ const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-100 pb-1 transition duration-300`;
 
 const LogoContainer = tw.div`flex items-center justify-center lg:justify-start`;
-const LogoText = tw.h5`ml-2 text-xl font-black`;
+const LogoText = tw.h5`mt-4 text-xl font-black`;
 
 const CompanyAddress = tw.p`mt-4 max-w-xs font-medium text-sm mx-auto lg:mx-0 lg:mr-4 leading-loose text-center lg:text-left`;
 
-const SocialLinksContainer = tw.div`mt-4 text-center lg:text-left`;
+const SocialLinksContainer = tw.div`text-center lg:text-left`;
 const SocialLink = styled.a`
   ${tw`cursor-pointer inline-block p-2 rounded-full bg-gray-100 text-blue-600 hover:bg-gray-500 transition duration-300 mr-4 last:mr-0`}
   svg {
@@ -45,7 +45,6 @@ export default () => {
         <FiveColumns>
         <CompanyColumn>
             <LogoContainer>
-              {/* <LogoImg src={LogoImage} /> */}
               <LogoText>University of Toronto Mental Health Association</LogoText>
             </LogoContainer>
             <CompanyAddress>
@@ -70,19 +69,19 @@ export default () => {
             <ColumnHeading>Site Navigation</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Resources</Link>
+                <Link href="/resources">Resources</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/components/innerPages/EventsAndIntiatives">Events & initiatives</Link>
+                <Link href="/eventsandinitiatives">Events and initiatives</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Team</Link>
+                <Link href="/newsandupdates">News and Updates</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/components/innerPages/BlogIndexPage">Blog</Link>
+                <Link href="/joinus">Join Us</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="/components/innerPages/AboutUsPage">Join Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </LinkListItem>
             </LinkList>
           </Column>

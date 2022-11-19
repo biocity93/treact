@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnDark";
+import Footer from "components/footers/FooterMain";
 import MainFeature1 from "components/coloumns/TwoColWithButton.js";
 
 const Description = tw.span`inline-block mt-8`;

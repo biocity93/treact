@@ -3,7 +3,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import MainFeature from "components/coloumns/TwoColWithButton.js";
-import Footer from "components/footers/FiveColumnDark.js";
+import Footer from "components/footers/FooterMain.js";
 import Hero from "components/hero/BackgroundAsImage.js";
 import Blog from "components/cards/ThreeColSlider.js"
 import Sponsors from "components/coloumns/Sponsors.js"
