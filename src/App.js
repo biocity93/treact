@@ -11,7 +11,7 @@ import EventsAndIntiativesPage from "pages/EventsAndIntiatives.js";
 import ResoucesPage from "pages/Resources.js";
 import Homepage from "pages/Homepage.js";
 import SponsorsPage from "pages/SponsorsPage";
-
+import ComponentRenderer from "ComponentRenderer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -24,6 +24,8 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
+        <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
