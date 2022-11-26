@@ -10,7 +10,6 @@ import Resources from "pages/Resources.js";
 import BackgroundAsImageHero from "components/hero/BackgroundAsImage.js";
 
 import ThreeColWithSideImageFeatures from "components/coloumns/ThreeColWithSideImage.js";
-import TwoColWithButtonFeatures from "components/coloumns/TwoColWithButton.js";
 import ThreeColSimpleFeatures from "components/coloumns/Sponsors.js";
 import ThreeColWithSideImageWithPrimaryBackgroundFeatures from "components/coloumns/ThreeColWithSideImageWithPrimaryBackground.js";
 import TwoColVerticalWithButtonFeatures from "components/coloumns/TwoColWithTwoFeaturesAndButtons.js";
@@ -24,7 +23,6 @@ import VerticalWithAlternateImageAndTextFeatures from "components/coloumns/Verti
 import SliderCards from "components/cards/ThreeColSlider.js";
 import TrendingCards from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 import PortfolioCards from "components/cards/PortfolioTwoCardsWithImage.js";
-import TabGridCards from "components/cards/TabCardGrid.js";
 import ProfileThreeColGridCards from "components/cards/ProfileThreeColGridHead.js"
 import ThreeColContactDetailsCards from "components/cards/ThreeColContactDetails.js"
 
@@ -80,11 +78,6 @@ export const components = {
           name: "Three Column With Side Image",
           component: ThreeColWithSideImageFeatures,
           url: "/components/blocks/Features/ThreeColWithSideImage",
-        },
-         TwoColWithButton: {
-          name: "Two Column With Image and Action Button",
-          component: TwoColWithButtonFeatures,
-          url: "/components/blocks/Features/TwoColWithButton",
         },
         ThreeColSimple: {
           name: "Three Column Simple",
@@ -146,11 +139,6 @@ export const components = {
           name: "Two Column Portfolio Cards With Images ",
           component: PortfolioCards,
           url: "/components/blocks/Cards/Portfolio",
-        },
-        TabGrid: {
-          name: "Tab Card Grid With Tab Switcher",
-          component: TabGridCards,
-          url: "/components/blocks/Cards/TabGrid",
         },
         ProfileThreeColGrid: {
           name: "Three Column Grid Cards For Profile",
