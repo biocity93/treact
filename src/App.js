@@ -9,8 +9,7 @@ import BlogIndexPage from "pages/BlogIndex.js";
 import ResourcesPage from "pages/Resources.js";
 import EventsAndIntiativesPage from "pages/EventsAndIntiatives.js";
 import ResoucesPage from "pages/Resources.js";
-import MainLandingPage from "pages/MainLandingPage.js";
-import ComponentRenderer from "ComponentRenderer.js";
+import Homepage from "pages/Homepage.js";
 import SponsorsPage from "pages/SponsorsPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,9 +24,7 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/" element={<MainLandingPage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/newsandupdates" element={<BlogIndexPage />} />
