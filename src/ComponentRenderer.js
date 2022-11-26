@@ -33,18 +33,7 @@ import ThreeColSimpleWithImageAndDashedBorderBlog from "components/blog/ThreeCol
 import PopularAndRecentPostsBlog from "components/blog/PopularAndRecentBlogPosts.js";
 import GridWithFeaturedPostBlog from "components/blog/GridWithFeaturedPost.js";
 
-import TwoColumnWithImageTestimonial from "components/testimonials/TwoColumnWithImage.js";
-import TwoColumnWithImageAndProfilePictureReviewTestimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
-import TwoColumnWithImageAndRatingTestimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
-import ThreeColumnWithProfileImageTestimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
-import SimplePrimaryBackgroundTestimonial from "components/testimonials/SimplePrimaryBackground.js";
-
-import SimpleWithSideImageFAQS from "components/faqs/SimpleWithSideImage.js";
-import SingleColFAQS from "components/faqs/SingleCol.js";
-import TwoColumnPrimaryBackgroundFAQS from "components/faqs/TwoColumnPrimaryBackground.js";
-
 import SimpleContactUsForm from "components/forms/SimpleContactUs.js";
-import SimpleSubscribeNewsletterForm from "components/forms/SimpleSubscribeNewsletter.js";
 import TwoColContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 import MainFooter from "components/footers/FooterMain.js";
 
@@ -207,58 +196,6 @@ export const components = {
       } 
     },
 
-    Testimonial: {
-      type: "Testimonial Section",
-      elements: {
-        TwoColumnWithImage: {
-          name: "Two Column With Image",
-          component: TwoColumnWithImageTestimonial,
-          url: "/components/blocks/Testimonial/TwoColumnWithImage",
-        },
-        TwoColumnWithImageAndProfilePictureReview: {
-          name: "Two Column With Image And Profile Picture Review",
-          component: TwoColumnWithImageAndProfilePictureReviewTestimonial,
-          url: "/components/blocks/Testimonial/TwoColumnWithImageAndProfilePictureReview",
-        },
-        TwoColumnWithImageAndRating: {
-          name: "Two Column With Image And Rating",
-          component: TwoColumnWithImageAndRatingTestimonial,
-          url: "/components/blocks/Testimonial/TwoColumnWithImageAndRating",
-        },
-        ThreeColumnWithProfileImage: {
-          name: "Three Column With Profile Image",
-          component: ThreeColumnWithProfileImageTestimonial,
-          url: "/components/blocks/Testimonial/ThreeColumnWithProfileImage",
-        },
-        SimplePrimaryBackground: {
-          name: "Simple With Primary Background",
-          component: SimplePrimaryBackgroundTestimonial,
-          url: "/components/blocks/Testimonial/SimplePrimaryBackground",
-        },
-      }
-    },
-
-    FAQS: {
-      type: "FAQs Section",
-      elements: {
-        SimpleWithSideImage: {
-          name: "Simple With Side Image",
-          component: SimpleWithSideImageFAQS,
-          url: "/components/blocks/FAQS/SimpleWithSideImage",
-        },
-        SingleCol: {
-          name: "Single Column",
-          component: SingleColFAQS,
-          url: "/components/blocks/FAQS/SingleCol",
-        },
-        TwoColumnPrimaryBackground: {
-          name: "Two Column With Primary Background",
-          component: TwoColumnPrimaryBackgroundFAQS,
-          url: "/components/blocks/FAQS/TwoColumnPrimaryBackground",
-        },
-      }
-    },
-
     Form: {
       type: "Forms Section",
       elements: {
@@ -266,11 +203,6 @@ export const components = {
           name: "Simple Contact Us",
           component: SimpleContactUsForm,
           url: "/components/blocks/Form/SimpleContactUs",
-        },
-        SimpleSubscribeNewsletter: {
-          name: "Simple Subscribe newsletter",
-          component: SimpleSubscribeNewsletterForm,
-          url: "/components/blocks/Form/SimpleSubscribeNewsletter",
         },
         TwoColContactUs: {
           name: "Two Column Contact Us",
