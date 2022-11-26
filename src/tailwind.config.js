@@ -27,7 +27,7 @@ module.exports = {
         800: '#460fb3',
         900: '#3c0d99',
       },
-
+      darkMode: 'class',
       secondary: {
         100: '#7c8ba1',
         200: '#667892',
