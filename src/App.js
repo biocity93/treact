@@ -11,6 +11,7 @@ import EventsAndIntiativesPage from "pages/EventsAndIntiatives.js";
 import ResoucesPage from "pages/Resources.js";
 import MainLandingPage from "pages/MainLandingPage.js";
 import ComponentRenderer from "ComponentRenderer.js";
+import SponsorsPage from "pages/SponsorsPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/joinus" element={<AboutUsPage />} />
           <Route path="/eventsandinitiatives" element={<EventsAndIntiativesPage />} />
           <Route path="/resources" element={<ResoucesPage />} />
+          <Route path="/sponsors" element={<SponsorsPage />} />
         </Routes>
       </Router>
     </>

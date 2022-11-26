@@ -52,6 +52,9 @@ export default () => {
       <NavLink href="/contact">
       Contact
     </NavLink>
+    <NavLink href="/sponsors">
+        Sponsors
+      </NavLink>
     </NavLinks>,
   ];
 

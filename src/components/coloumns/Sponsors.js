@@ -25,7 +25,7 @@ const Card = styled.a`
 export default ({
   cards = [
     {
-      title: "Sponsors",
+      title: "",
       imageSrc: DoGoodPaper,
     },
   ],

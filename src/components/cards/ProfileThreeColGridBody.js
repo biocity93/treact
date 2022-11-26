@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { Container, ContentWithPaddingSm } from "components/misc/Layouts.js";
 import { ReactComponent as InstagramIcon} from "images/instagram-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 
@@ -25,7 +25,7 @@ const CardContent = styled.div`
 const CardLinks = styled.div`
   ${tw`mt-6 flex`}
   .link {
-    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
+    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-blue-500 transition duration-300`}
     .icon {
       ${tw`fill-current w-6 h-6`}
     }
@@ -101,7 +101,7 @@ export default ({
             </Card>
           ))}
         </Cards>
-      <ContentWithPaddingXl></ContentWithPaddingXl>
+      <ContentWithPaddingSm></ContentWithPaddingSm>
     </Container>
   );
 };
