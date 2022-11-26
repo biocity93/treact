@@ -10,7 +10,7 @@ import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 
 const HeadingRow = tw.div`flex`;
-const Heading = tw(SectionHeading)`text-gray-900`;
+const Heading = tw(SectionHeading)`text-blue-900`;
 const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
   ${tw`mt-10 w-full sm:w-1/2 lg:w-1/3 sm:pr-8`}
@@ -59,6 +59,12 @@ export default ({
       url: "",
       featured: true
     },
+    getPlaceholderPost(),
+    getPlaceholderPost(),
+    getPlaceholderPost(),
+    getPlaceholderPost(),
+    getPlaceholderPost(),
+    getPlaceholderPost(),
     getPlaceholderPost(),
     getPlaceholderPost(),
     getPlaceholderPost(),

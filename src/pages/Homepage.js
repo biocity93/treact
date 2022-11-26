@@ -55,8 +55,7 @@ export default () => {
         imageDecoratorBlob={false}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
-      <Blog
-       />
+      <Blog />
       <Sponsors 
       heading="UofT MHA Sponsors"
       />
