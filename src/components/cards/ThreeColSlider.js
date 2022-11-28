@@ -10,7 +10,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-3.svg";
 import { Container} from "components/misc/Layouts.js";
 
-const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
+const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 overflow-hidden`;
 const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 const Heading = tw(SectionHeading)``;
 const Controls = tw.div`flex items-center`;
@@ -55,7 +55,6 @@ export default () => {
   const [sliderRef, setSliderRef] = useState(null);
   const sliderSettings = {
     arrows: false,
-    autoplay: false,
     slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -109,7 +108,7 @@ export default () => {
   ]
 
   return (
-    <Container >
+    <Container>
       <Content>
         <HeadingWithControl>
           <Heading>News and Updates</Heading>
