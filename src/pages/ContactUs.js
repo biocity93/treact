@@ -17,21 +17,9 @@ export default () => {
       <Header />
       <ContactUsForm />
       <ContactDetails
-        cards={[
-          {
-            title: "St. George Campus",
-            description: (
-              <>
-                <Address>
-                  <AddressLine>
-                  Room 500L, 40 Willcocks Street</AddressLine>
-                  <AddressLine>Toronto, ON M5S 1C6</AddressLine>
-                </Address>
-                <Email>uoftmha@gmail.com</Email>
-              </>
-            )
-          },
-        ]}
+       subheading="Where are located"
+       heading="University of Toronto - St. George Campus "
+       description="Room 500L, 40 Willcocks Street, Toronto, ON M5S 1C6"
       />
       <Footer />
     </AnimationRevealPage>
