@@ -9,7 +9,7 @@ import { ReactComponent as InstagramIcon} from "images/instagram-icon.svg";
 
 const Container = tw.div`relative bg-blue-800 opacity-75 text-gray-100 -mx-8 -mb-8 px-8`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8 text-center `
-const FiveColumns = tw.div`flex flex-wrap justify-between`;
+const FiveColumns = tw.div`flex flex-wrap flex-shrink justify-between`;
 const Column = tw.div`w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left`;
 const CompanyColumn = tw.div`text-center md:text-left mb-16 lg:mb-0 w-full lg:w-1/5`;
 const TextContentOne = tw.div`lg:py-2 text-center md:text-left`;
