@@ -19,7 +19,7 @@ const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`w-64 h-20 bg-center [background-size:cover, auto] rounded`}
+  ${tw`w-64 h-32 bg-center [background-size: cover] rounded`}
 `
 const CardContent = styled.div`{
   ${tw`flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
@@ -33,7 +33,7 @@ const CardContent = styled.div`{
     ${tw`sm:ml-4 mt-4 sm:mt-2`}
   }
   .name {
-    ${tw`mt-2 text-center ml-6 tracking-wide font-bold text-2xl leading-none`}
+    ${tw`mt-2 tracking-wide font-bold text-2xl leading-none`}
   }
   .description {
     ${tw`mt-1 sm:mt-2 font-medium text-secondary-100 leading-loose`}
