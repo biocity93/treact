@@ -13,12 +13,12 @@ const Heading = tw.h5`text-sm text-gray-700`;
 
 const LinksContainer = tw(ColumnContainer)`flex justify-center lg:justify-end mt-6 lg:mt-0 flex-col sm:flex-row`;
 const Link = tw.a`w-full sm:w-auto text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 mt-4 first:mt-0 sm:mt-0 sm:mr-8 sm:last:mr-0 rounded font-bold border border-transparent tracking-wide transition duration-300 focus:outline-none focus:shadow-outline`;
-const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-gray-700 hocus:bg-gray-400`;
+const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-green-600 hocus:bg-green-900`;
 
 export default ({
   subheading = "For more resources: If you're in immediate danger, please call 911",
   heading = "",
-  primaryLinkText = "UofTMHA linktree",
+  primaryLinkText = "https://linktr.ee/uoftmha",
   primaryLinkUrl = "https://linktr.ee/uoftmha",
 }) => {
   return (
