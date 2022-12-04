@@ -7,7 +7,7 @@ const PrimaryBackgroundContainer = tw.div`py-12 lg:py-16 bg-yellow-200 rounded-l
 const Row = tw.div`sm:px-16 mx-auto flex justify-center items-center relative z-10 flex-col lg:flex-row text-center lg:text-left`;
 
 const ColumnContainer = tw.div`lg:w-1/2 max-w-lg`
-const TextContainer = tw(ColumnContainer)`text-2xl sm:text-4xl font-bold`;
+const TextContainer = tw(ColumnContainer)`text-xl sm:text-xl font-bold`;
 const Subheading = tw.h6`text-gray-700`;
 const Heading = tw.h5`text-sm text-gray-700`;
 
