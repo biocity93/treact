@@ -48,12 +48,10 @@ export default () => {
         } 
         buttonRounded={false}
         textOnLeft={false}
-        primaryButtonText="Join Us"
         imageSrc={"https://images.unsplash.com/photo-1515983206477-c0df29b37a27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80&auto=format&fit=crop&w=687&q=80&auto=format&fit=crop&w=1470&q=80"
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
-        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
       <Blog />
       <Sponsors 
