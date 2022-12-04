@@ -57,7 +57,7 @@ export default () => {
     arrows: false,
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1280,

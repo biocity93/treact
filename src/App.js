@@ -12,6 +12,8 @@ import ResoucesPage from "pages/Resources.js";
 import Homepage from "pages/Homepage.js";
 import SponsorsPage from "pages/SponsorsPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
+import { ReactComponent as MySVG } from "images/arrow-up-icon.svg";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -22,6 +24,9 @@ export default function App() {
     <>
       <GlobalStyles />
       <Router>
+      <ScrollToTop 
+        smooth component={<MySVG
+      />} />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/resources" element={<ResourcesPage />} />

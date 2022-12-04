@@ -6,11 +6,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/FooterMain";
 import ResourcesGrid from "components/cards/ResourcesThreeColGrid.js";
+import NotificationBanner from "components/misc/NotificationBanner.js";
 
 export default () => {
   return (
     <AnimationRevealPage>
       <Header />
+      <NotificationBanner />
       <ResourcesGrid />
       <Footer />
     </AnimationRevealPage>
