@@ -11,8 +11,8 @@ const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
 const Subheading = tw(SubheadingBase)`text-center mb-3`
 const Description = tw(SectionDescription)`mx-auto text-center`
-const Link = tw.a`mt-6 ml-2 text-blue-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-blue-500`;
-const Phone = tw.a`mt-8 ml-2 text-red-800/100 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-red-600`;
+const Link = tw.a`mt-6 text-blue-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-blue-500`;
+const Phone = tw.a`mt-8 text-red-800/100 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-red-600`;
 
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
@@ -30,7 +30,7 @@ const CardContent = styled.div`{
     }
   }
   .textContainer {
-    ${tw`sm:ml-4 mt-4 sm:mt-2`}
+    ${tw`mt-4 sm:mt-2`}
   }
   .name {
     ${tw`mt-2 tracking-wide font-bold text-2xl leading-none`}
