@@ -5,6 +5,13 @@ import { css } from "styled-components/macro";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings";
 import {SectionDescription} from "components/misc/Typography";
+import AssaultedWomensLogo from "images/resources/the-assaulted-womens-helpline-logo.jpg";
+import CAMHLogo from "images/resources/camh-logo.jpg";
+import MindYourMindLogo from "images/resources/mind-your-mind-logo.png";
+import KidsHelpPhoneLogo from "images/resources/kids-help-phone-logo.jpg";
+import DCLogo from "images/resources/DC_logo_OGT_CMYK.png";
+import GersteinCentreLogo from "images/resources/Gerstein-centre-logo.jpg";
+import NationalAboriginalLogo from "images/resources/national-aboriginal-logo.png";
 
 
 const HeadingContainer = tw.div``
@@ -19,7 +26,7 @@ const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`w-64 h-32 bg-center [background-size: cover] rounded`}
+  ${tw`w-64 h-40 bg-center [background-size: cover] rounded`}
 `
 const CardContent = styled.div`{
   ${tw`flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
@@ -67,7 +74,7 @@ export default ({
 
     },
     {
-      imageSrc: "https://gersteincentre.org/wordpress/wp-content/themes/gersteincentre/img/logo/Gerstein-centre-logo.jpg",
+      imageSrc: GersteinCentreLogo,
       position: "Position",
       name: "The Gerstein Centre",
       description:  <p><span>&#8226; </span>  Non-medical mental health crisis support </p>,
@@ -75,7 +82,7 @@ export default ({
       url:"gersteincentre.org",
     },
     {
-      imageSrc: "https://www.ffwd.org/wp-content/uploads/Kids-Help-Phone-logo.png",
+      imageSrc: KidsHelpPhoneLogo,
       position: "Position",
       name: "Kids Help Phone",
       description:  <p><span>&#8226; </span>  Text,  phone, chat and other forms of support for young people 24/7 and in English and French</p>,
@@ -83,7 +90,7 @@ export default ({
       url: "kidshelpphone.ca",
     },
     {
-      imageSrc: "https://www.chfi.com/wp-content/uploads/sites/2/2020/05/AWHL_clr-1-e1589411873290-1024x576.jpg",
+      imageSrc: AssaultedWomensLogo,
       position: "Position",
       name: "Assaulted Women's Helpline",
       description: <p><span>&#8226; </span>  #SAFE (#7233) on your Bell, Rogers, Fido or Telus Mobile </p>,
@@ -91,7 +98,7 @@ export default ({
       url: "awhl.org",
     },
     {
-      imageSrc: "https://www.thatericalper.com/wp-content/uploads/2018/12/CAMH-Logo-for-SMALL-Open-Graph.jpg",
+      imageSrc: CAMHLogo,
       position: "Position",
       name: "GTA Crisis Resources",
       description: <p><span>&#8226; </span>  Mental Health Crisis Line (Canada Wide) </p>,
@@ -99,7 +106,7 @@ export default ({
       url: "www.camh.ca/en/health-info/crisis-resources",
     },
     {
-      imageSrc: "https://mindyourmind.ca/images/logo.png",
+      imageSrc: MindYourMindLogo,
       position: "Position",
       name: "Mind Your Mind",
       description: <p><span>&#8226; </span>  List of places to call in Canada and US </p>,
@@ -107,7 +114,7 @@ export default ({
       url: "mindyourmind.ca/help/where-call",
     },
     {
-      imageSrc: "https://static1.squarespace.com/static/5a03516264b05fad2cec401c/t/60e36d59704c791a20ec752d/1668186030396/",
+      imageSrc: DCLogo,
       position: "Position",
       name: "Toronto Distress Centre",
       description: <p><span>&#8226; </span> Emotional support services for those with chronic mental health problems </p>,
@@ -120,7 +127,7 @@ export default ({
 
     },
     {
-      imageSrc: "https://images.squarespace-cdn.com/content/v1/5f738ba8104fc0629adf2e86/1601502353270-ZGUT1TKOJ7DH8VC0BFII/NACAFV_logo_English.png",
+      imageSrc: NationalAboriginalLogo,
       position: "Position",
       name: "National Aboriginal Circle Against Family Violence",
       description: <p><span>&#8226; </span> List of shelters across Canada </p>,
