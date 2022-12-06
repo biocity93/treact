@@ -18,15 +18,16 @@ const Column = styled.div`
 const Card = styled.a`
   ${tw`flex flex-col items-center text-center h-full mx-4 px-4 py-8 rounded transition-transform duration-300`}
   .title {
-    ${tw`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`}
+    ${tw`mt-2 tracking-wide font-bold text-2xl leading-none`}
   }
   }
 `;
 export default ({
   cards = [
     {
-      title: "",
+      title: "Do Good Paper Co.",
       imageSrc: DoGoodPaper,
+      url: "https://dogoodpaper.co/",
     },
   ],
   heading = "",
