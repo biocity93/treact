@@ -16,9 +16,9 @@ const Link = tw.a`w-full sm:w-auto text-sm sm:text-base px-6 py-3 sm:px-8 sm:py-
 const PrimaryLink = tw(Link)`shadow text-gray-100 hocus:text-gray-300 bg-green-600 hocus:bg-green-900`;
 
 export default ({
-  subheading = "For more resources: If you're in immediate danger, please call 911",
+  subheading = "If you're in immediate danger, please call 911",
   heading = "",
-  primaryLinkText = "https://linktr.ee/uoftmha",
+  primaryLinkText = "For more resources",
   primaryLinkUrl = "https://linktr.ee/uoftmha",
 }) => {
   return (
