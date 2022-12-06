@@ -5,6 +5,7 @@ import { css } from "styled-components/macro";
 import { Container, ContentWithPaddingSm } from "components/misc/Layouts.js";
 import { ReactComponent as InstagramIcon} from "images/instagram-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
+import user1 from "images/headshots/1C7DA609-401C-446C-9D67-7C73E3B85B20 - Amania Abid.jpeg";
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
 const Card = tw.div`w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`

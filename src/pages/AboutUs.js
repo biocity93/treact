@@ -10,6 +10,8 @@ import TeamCardGridHead from "components/cards/ProfileThreeColGridHead.js";
 import TeamCardGridBody from "components/cards/ProfileThreeColGridBody.js";
 import Logo from "images/MHA-02.png";
 
+import user1 from "images/headshots/1C7DA609-401C-446C-9D67-7C73E3B85B20 - Amania Abid.jpeg";
+
 export default () => {
   return (
     <AnimationRevealPage>
