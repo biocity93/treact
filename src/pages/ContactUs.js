@@ -17,7 +17,7 @@ export default () => {
       <Header />
       <ContactUsForm />
       <ContactDetails
-       subheading="Where are located"
+       subheading="Where we are located"
        heading="University of Toronto - St. George Campus "
        description="Room 500L, 40 Willcocks Street, Toronto, ON M5S 1C6"
       />
