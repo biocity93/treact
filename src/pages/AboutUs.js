@@ -153,6 +153,12 @@ export default () => {
  <TeamCardGridHead
       cards ={ [
         {
+          imageSrc: "https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg",
+          position: "Secretary",
+          name: "Julia Do (she/her)",
+          links: [],
+        },
+        {
           imageSrc:  "https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg",
           position: "Website Manager",
           name: "Habin Baek",
@@ -184,25 +190,10 @@ export default () => {
             },
           ],
         },
-        {
-          imageSrc: JuliannaGajraj,
-          position: "Vice-President",
-          name: "Julianna Gajraj (she/they)",
-          links: [
-            {
-              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
-              icon: EmailIcon,
-            },
-            {
-              url: "https://www.linkedin.com/in/julianna-gajraj/",
-              icon: LinkedinIcon,
-            },
-          ],
-        },
       ]
     }
       />
-       <TeamCardGridHead
+       {/* <TeamCardGridHead
       cards ={ [
         {
           imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
@@ -657,7 +648,7 @@ export default () => {
         },
       ]
     }
-      />
+      /> */}
       <ContentWithPaddingSm/>
       <Footer />
     </AnimationRevealPage>
