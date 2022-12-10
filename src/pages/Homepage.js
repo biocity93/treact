@@ -7,7 +7,8 @@ import Footer from "components/footers/FooterMain.js";
 import Hero from "components/hero/BackgroundAsImage.js";
 import Blog from "components/cards/ThreeColSlider.js"
 import Sponsors from "components/coloumns/Sponsors.js"
-import ContactForm from "components/forms/SimpleContactUs"
+import ContactForm from "components/forms/SimpleContactUs.js"
+import Store from "components/coloumns/Store.js"
 
 export default () => {
   const Description = tw.span`inline-block mt-8`;
@@ -56,6 +57,9 @@ export default () => {
       <Blog />
       <Sponsors 
       heading="UofT MHA Sponsors"
+      />
+      <Store
+      heading="Our Apparel"
       />
       <ContactForm />
       <Footer />
