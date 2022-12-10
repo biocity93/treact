@@ -18,7 +18,7 @@ const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-3xl lg:max-
 const Card = tw.div`mt-12 w-full sm:w-1/2 lg:w-1/4 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`bg-cover h-56 w-56 bg-center rounded-full`}
+  ${tw`bg-cover h-48 w-48 bg-center rounded-full`}
 `
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
