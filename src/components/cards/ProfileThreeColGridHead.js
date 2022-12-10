@@ -21,7 +21,7 @@ const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`bg-cover h-56 w-56 bg-center rounded-lg`}
+  ${tw`bg-contain h-56 w-56 bg-center rounded-full`}
 `
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
@@ -49,12 +49,12 @@ export default ({
   description = "",
   cards = [
     {
-      imageSrc:  user1,
+      imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
       position: "Co-President",
       name: "Rohina Kumar (she/her)",
       links: [
         {
-          url:"rohina.kumar@mail.utoronto.ca",
+          url:mailto+"rohina.kumar@mail.utoronto.ca",
           icon: EmailIcon,
         },
         {
