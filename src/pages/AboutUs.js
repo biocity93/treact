@@ -13,6 +13,13 @@ import { ReactComponent as EmailIcon} from "images/icons8-mail.svg";
 import VictoriaColaluca from "images/headshots/E909D56D-CA84-412A-AE30-2C70A28B8AB3 - UofT Mental Health Student Association.jpeg";
 import AliahJanoudy from "images/headshots/Screen Shot 2022-10-25 at 11.42.12 PM - UofT Mental Health Student Association.png";
 import JuliannaGajraj from "images/headshots/a - Julianna Gajraj(1).png";
+import MatthewKuo from "images/headshots/20210707_141739 - Matthew Kuo.jpeg";
+import JonathanManoon from "images/headshots/MHA Pic 2 - Jonathan Manoon.jpg";
+
+
+
+
+
 
 const ContentWithPaddingSm= tw.div`max-w-screen-lg mx-auto py-8 lg:py-12`;
 const mailto = "mailto:"
@@ -94,56 +101,51 @@ export default () => {
       <TeamCardGridHead
       cards ={ [
         {
-          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
-          position: "Co-President",
-          name: "Rohina Kumar (she/her)",
+          imageSrc:  MatthewKuo,
+          position: "Vice-President",
+          name: "Matthew Kuo (he/him)",
           links: [
             {
-              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              url:mailto+"matthew.kuo@mail.utoronto.ca",
               icon: EmailIcon,
             },
             {
-              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              url: "https://www.linkedin.com/in/matthew-kuo-30a892229/",
               icon: LinkedinIcon,
             },
           ],
         },
         {
-          imageSrc: VictoriaColaluca,
-          position: "Co-President",
-          name: "Victoria Colaluca (she/her)",
+          imageSrc: "https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg",
+          position: "Secretary",
+          name: "Hana Wernick (she/he/they)",
           links: [
             {
-              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              url:mailto+ "hanaj.wernick@mail.utoronto.ca",
               icon: EmailIcon,
             },
           ],
         },
         {
-          imageSrc: AliahJanoudy,
-          position: "Vice-President",
-          name: "Aliah Janoudy (she/her)",
+          imageSrc: JonathanManoon,
+          position: "Secretary",
+          name: "Jonathan Manoon (he/him)",
           links: [
             {
-              url:mailto+ "a.janoudy@mail.utoronto.ca",
-              icon: EmailIcon,
-            },
-          ],
-        },
-        {
-          imageSrc: JuliannaGajraj,
-          position: "Vice-President",
-          name: "Julianna Gajraj (she/they)",
-          links: [
-            {
-              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              url:mailto+ "jonathan.manoon@mail.utoronto.ca",
               icon: EmailIcon,
             },
             {
-              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              url: "https://www.linkedin.com/in/jonathan-manoon-481b02207/",
               icon: LinkedinIcon,
             },
           ],
+        },
+        {
+          imageSrc: "https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg",
+          position: "Secretary",
+          name: "Narod Dishosip",
+          links:[]
         },
       ]
     }
@@ -151,39 +153,34 @@ export default () => {
  <TeamCardGridHead
       cards ={ [
         {
-          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
-          position: "Co-President",
-          name: "Rohina Kumar (she/her)",
+          imageSrc:  "https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg",
+          position: "Website Manager",
+          name: "Habin Baek",
+          links: [],
+        },
+        {
+          imageSrc: "https://i.pinimg.com/474x/20/0d/72/200d72a18492cf3d7adac8a914ef3520.jpg",
+          position: "Website Manager",
+          name: "Neyla Fidan (she/her)",
           links: [
             {
-              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              url:mailto+ "neyla.fidan@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: "https://media-exp1.licdn.com/dms/image/C5603AQGKy1WqczOA6g/profile-displayphoto-shrink_200_200/0/1657027744531?e=1675900800&v=beta&t=uRqlQenz5CkqKZ0_04jthcM68g6YbpUp_WfbwPjIfUk",
+          position: "Website Manager",
+          name: "Jesse Raso (he/him)",
+          links: [
+            {
+              url:mailto+ "jesse.raso@mail.utoronto.ca",
               icon: EmailIcon,
             },
             {
-              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              url: "https://www.linkedin.com/in/jessecraso/",
               icon: LinkedinIcon,
-            },
-          ],
-        },
-        {
-          imageSrc: VictoriaColaluca,
-          position: "Co-President",
-          name: "Victoria Colaluca (she/her)",
-          links: [
-            {
-              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
-              icon: EmailIcon,
-            },
-          ],
-        },
-        {
-          imageSrc: AliahJanoudy,
-          position: "Vice-President",
-          name: "Aliah Janoudy (she/her)",
-          links: [
-            {
-              url:mailto+ "a.janoudy@mail.utoronto.ca",
-              icon: EmailIcon,
             },
           ],
         },
