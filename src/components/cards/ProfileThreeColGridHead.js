@@ -8,28 +8,25 @@ import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as EmailIcon} from "images/icons8-mail.svg";
 
-import user1 from "images/headshots/IMG - UofT Mental Health Student Association.HEIC";
-
 
 const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
 const Subheading = tw(SubheadingBase)`text-center mb-3`
 const Description = tw(SectionDescription)`mx-auto text-center`
-const mailto = "mailto:"
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
-const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
+const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/4 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`bg-contain h-56 w-56 bg-center rounded-full`}
+  ${tw`bg-cover h-56 w-56 bg-center rounded-full`}
 `
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
-    ${tw`uppercase font-bold tracking-widest text-xs text-primary-500`}
+    ${tw`uppercase font-bold tracking-widest text-xs text-blue-700`}
   }
   .name {
-    ${tw`mt-1 text-xl font-medium text-gray-900`}
+    ${tw`mt-1 text-xl font-medium text-gray-700`}
   9
 `
 
@@ -49,16 +46,16 @@ export default ({
   description = "",
   cards = [
     {
-      imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
-      position: "Co-President",
-      name: "Rohina Kumar (she/her)",
+      imageSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
+      position: "Position",
+      name: "Name",
       links: [
         {
-          url:mailto+"rohina.kumar@mail.utoronto.ca",
+          url: "",
           icon: EmailIcon,
         },
         {
-          url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+          url: "",
           icon: LinkedinIcon,
         },
       ],
@@ -69,26 +66,43 @@ export default ({
       name: "Name",
       links: [
         {
-          url: "https://twitter.com",
+          url: "",
           icon: EmailIcon,
         },
         {
-          url: "https://linkedin.com",
+          url: "",
           icon: LinkedinIcon,
         },
       ],
     },
+
     {
       imageSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
       position: "Position",
       name: "Name",
       links: [
         {
-          url: "https://twitter.com",
+          url: "",
           icon: EmailIcon,
         },
         {
-          url: "https://linkedin.com",
+          url: "",
+          icon: LinkedinIcon,
+        },
+      ],
+    },
+
+    {
+      imageSrc: "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
+      position: "Position",
+      name: "Name",
+      links: [
+        {
+          url: "",
+          icon: EmailIcon,
+        },
+        {
+          url: "",
           icon: LinkedinIcon,
         },
       ],
@@ -97,7 +111,6 @@ export default ({
 }) => {
   return (
     <Container>
-      <ContentWithPaddingXl>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
           {heading && <Heading>{heading}</Heading> }
@@ -121,7 +134,6 @@ export default ({
             </Card>
           ))}
         </Cards>
-      </ContentWithPaddingXl>
     </Container>
   );
 };

@@ -4,11 +4,18 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
-import Footer from "components/footers/FooterMain";
+import Footer from "components/footers/FooterMain.js";
 import MainFeature1 from "components/coloumns/TwoColWithButton.js";
 import TeamCardGridHead from "components/cards/ProfileThreeColGridHead.js";
-import TeamCardGridBody from "components/cards/ProfileThreeColGridBody.js";
 import Logo from "images/MHA-02.png";
+import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
+import { ReactComponent as EmailIcon} from "images/icons8-mail.svg";
+import VictoriaColaluca from "images/headshots/E909D56D-CA84-412A-AE30-2C70A28B8AB3 - UofT Mental Health Student Association.jpeg";
+import AliahJanoudy from "images/headshots/Screen Shot 2022-10-25 at 11.42.12 PM - UofT Mental Health Student Association.png";
+import JuliannaGajraj from "images/headshots/a - Julianna Gajraj(1).png";
+
+const ContentWithPaddingSm= tw.div`max-w-screen-lg mx-auto py-8 lg:py-12`;
+const mailto = "mailto:"
 
 export default () => {
   return (
@@ -28,13 +35,633 @@ export default () => {
       <TeamCardGridHead
       heading= "2022-2023"
       description="Executive Team"
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
       />
-      <TeamCardGridBody/>
-      <TeamCardGridBody/>
-      <TeamCardGridBody/>
-      <TeamCardGridBody/>
-      <TeamCardGridBody/>
-      <TeamCardGridBody/>
+      <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+ <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+       <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+       <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+       <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+       <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+             <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+             <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+             <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+             <TeamCardGridHead
+      cards ={ [
+        {
+          imageSrc:  "https://media-exp1.licdn.com/dms/image/C4D03AQFwAz-Dml9AQA/profile-displayphoto-shrink_200_200/0/1615482358118?e=1675900800&v=beta&t=GDn-wKLKviq-0rNJzkn84uddXKgnXjBPh1rxYJLseEM",
+          position: "Co-President",
+          name: "Rohina Kumar (she/her)",
+          links: [
+            {
+              url:mailto+"rohina.kumar@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: " https://www.linkedin.com/in/rohina-kumar-she-her-a377a4141",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: VictoriaColaluca,
+          position: "Co-President",
+          name: "Victoria Colaluca (she/her)",
+          links: [
+            {
+              url:mailto+ "Victoria.colaluca@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: AliahJanoudy,
+          position: "Vice-President",
+          name: "Aliah Janoudy (she/her)",
+          links: [
+            {
+              url:mailto+ "a.janoudy@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+          ],
+        },
+        {
+          imageSrc: JuliannaGajraj,
+          position: "Vice-President",
+          name: "Julianna Gajraj (she/they)",
+          links: [
+            {
+              url:mailto+ "julianna.gajraj@mail.utoronto.ca",
+              icon: EmailIcon,
+            },
+            {
+              url: "https://www.linkedin.com/in/julianna-gajraj/",
+              icon: LinkedinIcon,
+            },
+          ],
+        },
+      ]
+    }
+      />
+      <ContentWithPaddingSm/>
       <Footer />
     </AnimationRevealPage>
   );
